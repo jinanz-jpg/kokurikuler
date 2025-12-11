@@ -1,0 +1,158 @@
+/* Styling Umum (Menggunakan Opsi Gradien Pesisir) */
+body {
+    /* Latar Belakang Gradien Pesisir */
+    background: linear-gradient(135deg, #FFFACD 0%, #FFD700 100%); 
+    /* Warna: Krem muda ke Emas/Kuning terang */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #008000; /* Hijau, mewakili warna tradisional Madura */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5em;
+}
+
+/* Navigasi */
+nav {
+    background-color: #ffcc00; /* Kuning/Emas, warna cerah Madura */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    position: sticky; /* Agar navigasi tetap di atas saat digulir */
+    top: 0;
+    z-index: 100;
+}
+
+.nav-item {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: #cc0000; /* Merah */
+    color: white;
+}
+
+/* Konten Utama */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.budaya-section {
+    background-color: rgba(255, 255, 255, 0.95); /* Kotak konten putih semi-transparan */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Bayangan lebih dalam */
+}
+
+.budaya-section h2 {
+    color: #cc0000; /* Merah, warna berani Batik Madura */
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.budaya-section h3 {
+    color: #008000;
+}
+
+/* Tombol */
+button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #800000;
+}
+
+/* Fakta Tersembunyi */
+.fakta-tersembunyi {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fffacd; 
+    border-left: 5px solid #ffcc00;
+    border-radius: 3px;
+    font-style: italic;
+}
+
+
+/* --- Styling untuk Gambar (Disesuaikan agar tidak terpotong & memiliki max-width) --- */
+
+/* Gambar Utama di Setiap Section Besar */
+.main-image {
+    width: 100%; 
+    max-width: 800px; 
+    max-height: 400px; 
+    display: block;
+    margin: 0 auto 15px auto; 
+    object-fit: contain; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: #eee; 
+}
+
+/* Gambar di Sub-judul (OPTI B: Sudut Lembut & Bayangan) */
+.sub-image {
+    width: 90%;
+    max-width: 600px; 
+    max-height: 300px; 
+    display: block;
+    margin: 10px auto; 
+    object-fit: contain; 
+    background-color: #eee;
+    
+    /* MODIFIKASI BARU */
+    border-radius: 20px; /* Sudut membulat yang lembut */
+    border: none;
+    box-shadow: 0 0 0 5px #ffcc00, 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Gambar di dalam Fakta Tersembunyi */
+.fakta-image {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fffacd; 
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f40000;
+    color: white;
+    margin-top: 30px;
+}
